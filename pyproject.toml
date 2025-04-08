@@ -1,0 +1,33 @@
+[[tool.poetry.source]]
+name = "ali"
+url = "https://mirrors.aliyun.com/pypi/simple/"
+priority = "primary"
+[project]
+name = "stockml"
+version = "0.1.0"
+package-mode = false
+description = ""
+authors = [
+    {name = "chopperhl",email = "chopperhl@qq.com"}
+]
+readme = "README.md"
+requires-python = ">=3.10,<4.0"
+dependencies = [
+    "pandas",
+    "mootdx (>=0.11.7,<0.12.0)",
+    "urllib3 (>=2.3.0,<3.0.0)",
+    "requests (>=2.32.3,<3.0.0)",
+    "pytesseract (>=0.3.13,<0.4.0)",
+    "pywinauto (==0.6.6)",
+    "pypiwin32 (>=223,<224)",
+    "flask (>=3.1.0,<4.0.0)",
+    "easyutils (>=0.1.7,<0.2.0)",
+    "scikit-learn (>=1.6.1,<2.0.0)",
+    "pandas-market-calendars (>=4.5.1,<5.0.0)",
+    "lightgbm (>=4.5.0,<5.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
